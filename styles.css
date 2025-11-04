@@ -1,0 +1,90 @@
+body {
+  background-color: #ffa8a8;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 36px;
+  color: #152a40;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #152a40;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: 3px double #152a40;
+  color: #152a40;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr::after {
+  background: #ffa8a8;
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+img {
+  width: 50%; /* половина ширины контейнера */
+  height: auto;
+  display: block; /* сделает из inline изображение блочный элемент */
+  margin: 0 auto; /* центрирование изображения */
+  border: 2px solid #4d427b; /* рамка вокруг изображения */
+  border-radius: 10px; /* скругленные углы */
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* тень вокруг изображения */
+}
+
+mark {
+  background-color: #dc8080; /* желтый цвет выделения */
+  padding: 0 4px; /* отступы слева и справа */
+  /* если хочешь чтобы разные слова выделялись разными цветами, можно использовать классы, т.е. mark.red и mark.blue  */
+}
+
+.warning { /* это класс и будет писаться точка перед ним */
+  border: 10px ridge #550e0e;
+  background-color: #fcd48a;
+  box-sizing: border-box; /* чтобы padding не увеличивал размер блока */
+  padding: 0.5rem;
+  width: fit-content /*бля я крч не разобралась, пусть у лини хоть где то будет личное пространство */
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center; 
+  margin: 0 auto;      /* центрирует сам блок */
+
+}
+
+.warning img {
+  width: 50%;
+}
+
+.warning p {
+  font: small-caps bold 1.2rem sans-serif;
+  text-align: center;
+}
+
+#lol {
+  background: linear-gradient(to bottom, #ffe8d4, #f69d3c);
+  border: 1px solid dimgrey;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px black;
+}
+
+#lol::before {
+  content: "ℹ️";
+  margin-right: 5px;
+}
